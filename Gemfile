@@ -21,6 +21,7 @@ gem 'foundation-icons-sass-rails'
 gem 'editarea-rails', github: 'akosipc/editarea-rails'
 gem 'haml-rails'
 gem 'pivotal-tracker'
+gem 'thin'
 
 group :doc do
   gem 'sdoc', require: false
