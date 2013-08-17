@@ -25,6 +25,6 @@ editAreaLoader.init({
   show_line_colors: true,
   allow_toggle: false,
   toolbar: '',
-  min_height: '400',
+  min_height: '675',
   is_editable: false
 })

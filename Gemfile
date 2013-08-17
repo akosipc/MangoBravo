@@ -18,6 +18,7 @@ gem 'zurb-foundation'
 gem 'foundation-icons-sass-rails'
 gem 'editarea-rails', github: 'akosipc/editarea-rails'
 gem 'haml-rails'
+gem 'pivotal-tracker'
 
 group :doc do
   gem 'sdoc', require: false

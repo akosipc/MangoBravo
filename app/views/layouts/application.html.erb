@@ -15,6 +15,7 @@
 
   	<title><%= content_for?(:title) ? yield(:title) : "PT2Cucumber" %></title>
 
+    <%= google_webfonts_link_tag :lato %>
   	<%= stylesheet_link_tag    "application" %>
   	<%= javascript_include_tag "vendor/custom.modernizr" %>
     <%= csrf_meta_tags %>
@@ -22,7 +23,9 @@
 
   <body>
 
-    <%= yield %>
+    <section>
+      <%= yield %>
+    </section>
     <%= render 'layouts/footer' %>
 
     <%= javascript_include_tag "application" %>

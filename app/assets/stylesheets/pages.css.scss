@@ -1,3 +1,50 @@
-// Place all the styles related to the Pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'compass/css3';
+
+body {
+
+  background: url('background.png') 0 0 repeat;
+
+  section { margin-top: 25px; }//element section
+
+  iframe {
+    @include border-radius(0px 15px 15px 0px);
+    border: 0px;
+    width: 98% !important;
+  }//element iframe
+
+  .wrapper {
+    background: rgba(244, 244, 244, 0.6);
+    padding: 10px 0px;
+    height: 700px;
+  }//class wrapper
+
+  .overflow {
+    height: 675px;
+    overflow: scroll;
+    background: #FFF;
+    border-right: 0px;
+    border: 1px solid #CCC;
+    @include border-radius(15px 0px 0px 15px);
+    margin-left: 15px;
+  }//class overflow
+
+  ul {
+    list-style:none;
+    padding: 6px 11px;
+
+    li {
+      padding: 4px 6px;
+      border-bottom: 2px solid rgba(69, 69, 69, 0.8);
+      font-size: 14px;
+
+    }//element li
+
+      .button {
+        font-size: 12px !important;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
+
+  }//element ul
+
+}//element body
+

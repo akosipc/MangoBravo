@@ -12,3 +12,15 @@
  *= require foundation_and_overrides
  *= require_tree .
  */
+
+
+.centerify { margin: 0 auto; text-align: center; }
+.left { float: left; }
+.right { float: right; }
+.clearfix { clear: both; }
+.no-margin { margin: 0px !important; }
+.no-padding-right { padding-right: 0px !important; }
+.no-padding-left { padding-left: 0px !important; }
+body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
