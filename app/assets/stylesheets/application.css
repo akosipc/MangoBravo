@@ -21,6 +21,4 @@
 .no-margin { margin: 0px !important; }
 .no-padding-right { padding-right: 0px !important; }
 .no-padding-left { padding-left: 0px !important; }
-body {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
-}
+body { font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif !important; }
