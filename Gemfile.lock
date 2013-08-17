@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/akosipc/editarea-rails.git
-  revision: cedbcd051aa4ae780894a3ebdd121c4e3c7a5bea
+  revision: 059f60de045308199fbfac15c5bc21190486570d
   specs:
     editarea-rails (2.1.0)
       rails (>= 3.1)
