@@ -1,5 +1,17 @@
+<div>
+  <%= form_tag '/', method: 'post' do %>
+    <%= label_tag :token %>
+    <%= text_field_tag :token, params[:token] %>
+    <%= label_tag :project_id, "Project ID" %>
+    <%= text_field_tag :project_id, params[:project_id] %>
+    <%= submit_tag "Fetch" %>
+  <% end %>
+</div>
 <div class='large-4 small-4 columns'>
   &nbsp;
+</div>
+<div>
+  <%= render "pages/stories" %>
 </div>
 <div class='large-8 small-8 columns'>
   <textarea id='textarea'>

@@ -1,0 +1,18 @@
+<% if params[:token].present? && params[:project_id].present? %>
+  <% @project.stories.all.each_with_index do |story, index| %>
+    <% str = '' %>
+    <% description = story.description.split(',') %>
+    <% str += "Feature:\n" %>
+    <% str += "\t#{description[0]}\n" %>
+    <% str += "\t#{description[1]}\n" %>
+    <% str += "\tSo that\n\n" %>
+    <% str += "\tScenario: #{story.name}\n" %>
+    <% tasks = story.tasks.all %>
+    <% if tasks.present? %>
+      <% tasks.each do |task| %>
+        <% str += "\t\t#{task.description}\n" %>
+      <% end %>
+    <% end %>
+    <%= text_area_tag "test_#{index}", str, size: "30x10" %>
+  <% end %>
+<% end %>
