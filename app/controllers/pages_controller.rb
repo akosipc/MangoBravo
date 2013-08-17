@@ -52,6 +52,7 @@ private
     str += "\t#{name[0]}\n"
     str += "\t#{name[1]}\n"
     str += "\tSo that\n\n"
+    str += "\t@mango @#{story.id}\n"
     str += "\tScenario: #{story.name}\n"
     tasks = story.tasks.all
     if tasks.present?

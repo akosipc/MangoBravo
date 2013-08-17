@@ -1,17 +1,20 @@
 <div class='sign-in'>
   <div class='large-12 small-12 columns'>
-    <div class='wrapper'>
+		<div class='wrapper'>
+			<div class='centerify hero'>
+				Pivotal Tracker Stories to Cucumber Features
+			</div>
       <div class='half-container vertical-centerify form'>
         <%= form_tag auth_path do %>
           <div class='large-4 small-4 columns centerify'>
-            <%= label_tag 'token' %>
+            <%= label_tag 'token', 'Pivotal Tracker API Token' %>
           </div>
           <div class='large-8 small-8 columns'>
             <%= text_field_tag 'token', '', placeholder: 'API Token', require: true %>
           </div>
 
           <div class='large-4 small-4 columns centerify'>
-            <%= label_tag 'project_id', 'Project ID' %>
+            <%= label_tag 'project_id', 'Pivotal Tracker Project ID' %>
           </div>
           <div class='large-8 small-8 columns'>
             <%= text_field_tag 'project_id', '', placeholder: 'Project ID', require: true %>
