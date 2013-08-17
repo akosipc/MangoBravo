@@ -16,7 +16,7 @@ gem 'compass-rails', '~> 2.0.alpha.0'
 gem 'google-webfonts'
 gem 'zurb-foundation'
 gem 'foundation-icons-sass-rails'
-gem 'codemirror-rails'
+gem 'editarea-rails', github: 'akosipc/editarea-rails'
 gem 'haml-rails'
 
 group :doc do

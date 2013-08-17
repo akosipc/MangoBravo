@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/akosipc/editarea-rails.git
+  revision: cedbcd051aa4ae780894a3ebdd121c4e3c7a5bea
+  specs:
+    editarea-rails (2.1.0)
+      rails (>= 3.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -34,8 +41,6 @@ GEM
       debug_inspector (>= 0.0.1)
     builder (3.1.4)
     chunky_png (1.2.8)
-    codemirror-rails (3.15)
-      railties (>= 3.0, < 5)
     coderay (1.0.9)
     coffee-rails (4.0.0)
       coffee-script (>= 2.2.0)
@@ -143,9 +148,9 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   binding_of_caller
-  codemirror-rails
   coffee-rails (~> 4.0.0)
   compass-rails (~> 2.0.alpha.0)
+  editarea-rails!
   foundation-icons-sass-rails
   google-webfonts
   haml-rails

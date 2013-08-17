@@ -12,7 +12,19 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require edit_area_full
 //= require foundation
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+
+editAreaLoader.init({
+  id: 'textarea',
+  syntax: 'ruby',
+  start_highlight: true,
+  show_line_colors: true,
+  allow_toggle: false,
+  toolbar: '',
+  min_height: '400',
+  is_editable: false
+})

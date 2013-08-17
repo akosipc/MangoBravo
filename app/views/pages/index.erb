@@ -1,0 +1,28 @@
+<div class='large-4 small-4 columns'>
+  &nbsp;
+</div>
+<div class='large-8 small-8 columns'>
+  <textarea id='textarea'>
+    @alm
+    Feature: Application and Device Type Management in Bundles
+
+      As a user of the portal UI
+      I want to be able to upload applications and device type bundles
+      So that I can operate the Portal devices
+
+      Background:
+        Given I am logged in as an administrator from the platform org
+        And I am on the DASHBOARD page
+        And I select the bundles option from the top navbar
+        And I should see the BUNDLES_LIST page
+        And I select the NEW button
+        And I should see the BUNDLES_UPLOAD page
+
+      @M2M-ALM-114
+      Scenario: Uploading Device Type in Bundles
+        When I use the form to upload the GAS_METER_DEVICE_BUNDLE_1 file
+        Then I should see a list that matches the following:
+          | Bundle ID Bundle Type Bundle Name Bundle Description Version                                    |
+          | GasMeterBundle1 Device Gas Meter Bundle 1 Metron Metrix 250 CHF Gas Meter Bundle Metron 250-1 1 |
+  </textarea>
+</div>
