@@ -10,5 +10,19 @@
  *
  *= require_self
  *= require foundation_and_overrides
+ *= require jackedup
  *= require_tree .
  */
+
+
+.centerify { margin: 0 auto; text-align: center; }
+.left { float: left; }
+.right { float: right; }
+.clearfix { clear: both; }
+.no-margin { margin: 0px !important; }
+.no-padding-right { padding-right: 0px !important; }
+.no-padding-left { padding-left: 0px !important; }
+body { font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif !important; }
+.half-container { width: 50%; margin: auto; }
+.quarter-container { width: 25%; margin: auto; }
+.vertical-centerify { position: absolute; left: 0; right: 0; bottom: 0; top: 0; margin: auto; display: table; }

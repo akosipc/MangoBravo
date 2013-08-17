@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.0.0'
+
 gem 'rails', '4.0.0'
 gem 'jquery-rails'
 
@@ -17,8 +19,10 @@ gem 'google-webfonts'
 gem 'zurb-foundation'
 gem 'foundation-icons-sass-rails'
 gem 'editarea-rails', github: 'akosipc/editarea-rails'
+gem 'humane-rails', github: 'akosipc/humane-rails'
 gem 'haml-rails'
 gem 'pivotal-tracker'
+gem 'thin'
 
 group :doc do
   gem 'sdoc', require: false
@@ -28,4 +32,8 @@ group :development do
   gem 'quiet_assets'
   gem 'better_errors'
   gem 'binding_of_caller'
+end
+
+group :production do
+	gem 'rails_12factor'
 end
