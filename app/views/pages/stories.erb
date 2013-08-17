@@ -7,9 +7,9 @@
     <div class='wrapper'>
       <div class='overflow'>
         <ul>
-          <% @project.stories.all.each do |story| %>
+          <% @project.stories.all(story_type: 'feature').each do |story| %>
             <li>
-              <%= story.name %>
+              <%= story.name.truncate(50) %>
             <div class='right'>
               <%= link_to 'Convert', convert_path(story.id), class: 'button success tiny no-margin' %>
             </div>

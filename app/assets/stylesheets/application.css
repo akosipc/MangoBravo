@@ -25,4 +25,5 @@
 body { font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif !important; }
 .half-container { width: 50%; margin: auto; }
 .quarter-container { width: 25%; margin: auto; }
+.high-quarter-container { width: 75%; margin: auto; }
 .vertical-centerify { position: absolute; left: 0; right: 0; bottom: 0; top: 0; margin: auto; display: table; }
