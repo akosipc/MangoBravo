@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  require 'markdown_handler'
   protect_from_forgery with: :exception
 
   before_filter :persist_token

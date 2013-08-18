@@ -23,6 +23,7 @@ gem 'humane-rails', github: 'akosipc/humane-rails'
 gem 'haml-rails'
 gem 'pivotal-tracker'
 gem 'thin'
+gem 'markdown-rails'
 
 group :doc do
   gem 'sdoc', require: false

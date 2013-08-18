@@ -1,15 +1,15 @@
 @import 'compass/css3';
 
 body {
-
-  background: url('tweed.png') 0 0 repeat;
+  background: #f5f5f5;
+  color: #222;
 
   section { margin-top: 25px; }//element section
 
   label {
     font-size: 16px;
     line-height: 28px;
-    color: #000;
+    color: #212121;
   }
 
   iframe {
@@ -19,7 +19,7 @@ body {
   }//element iframe
 
   .wrapper {
-    background: rgba(244, 244, 244, 0.6);
+    background: #fff;
     padding: 10px 0px;
     height: 700px;
 
@@ -60,22 +60,66 @@ body {
 
     .button {
       font-size: 12px !important;
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      border-radius: 2px !important;
+      background: #79864e;
+      box-shadow: 0 2px 0 #9fb167;
     }//class button
 
   }//element ul
 
   .header {
-    background: rgba(244, 244, 244, 0.6);
+    background: #fff;
     width: 150px;
     text-align: center;
-    padding: 10px 0px 0px 0px;
-    @include border-radius(10px 10px 0px 0px);
+    padding: 10px 0px 5px;
+    @include border-radius(2px 2px 0px 0px);
     margin-left: 20px;
-    color: rgba(56, 56, 56, 0.9);
+    color: #79864e;
     float: left;
 
   }//class header
+
+  .image-footer {
+    padding: 80px 0;
+    text-align: center;
+  }
+  .mango-wrapper {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 960px;
+    min-height: 290px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+    margin: 120px auto 0;
+
+    & > div {
+      display: inline-block;
+    }
+    & > div:first-child {
+      width: 540px;
+    }
+  }
+
+  .button {
+    position: relative;
+    font-size: 14px;
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 4px 0 #9fb167;
+    background: #aac949;
+
+    &:hover {
+      background: #9fbf3b;
+    }
+
+    &:active {
+      top: 4px;
+      box-shadow: none;
+    }
+  }
 
   footer {
     position: fixed;
@@ -84,6 +128,7 @@ body {
     background: #000;
     color: #FFF;
     bottom: 0;
+    font-size: 13px;
   }//element footer
 
 }//element body

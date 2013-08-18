@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
 
-  before_filter :check_session, except: [:index]
+  before_filter :check_session, except: [:index, :documentation]
 
   def index
   end
@@ -42,6 +42,10 @@ class PagesController < ApplicationController
     redirect_to stories_path, notice: 'Successfully Connected'
   end
 
+  def documentation
+    @language = "Markdown"
+  end
+
 private
   def check_session
     if session[:token].present?
@@ -77,6 +81,7 @@ private
         str += "\t\t#{task.description}\n"
       end
     end
+    str += "\t\tThen I should be able to Finish this Pivotal Story with ID \"#{story.id}\""
 
     @feature = str
   end
