@@ -6,6 +6,23 @@ class PagesController < ApplicationController
   end
 
   def stories
+    unless @story.present?
+      str = ""
+      str += "\nExample Feature File:\n\n"
+      str += "Feature:\n"
+      str += "\tAs a User\n"
+      str += "\tI should be able to Sign in\n"
+      str += "\tSo that ....\n\n"
+      str += "\t@mango @567\n"
+      str += "\tScenario: As a User, I should be able to Sign in\n"
+      str += "\t\tGiven I am on the \"Sign In\" page\n"
+      str += "\t\tWhen I type my login credentials: |email|password| |user@example.com|defaultpassword123!|\n"
+      str += "\t\tAnd I press the \"Sign In\" button\n"
+      str += "\t\tAnd I should be on \"Home\" page\n"
+      str += "\t\tThen I should be able to Finish this Pivotal Story with ID \"567\""
+
+      @feature = str
+    end
   end
 
   def convert
@@ -46,7 +63,7 @@ private
 
 
   def build_feature (story)
-    str = ''
+    str = ""
     name = story.name.split(',')
     str += "\nFeature:\n"
     str += "\t#{name[0]}\n"
