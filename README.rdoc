@@ -1,6 +1,7 @@
 == MangoBravo
 
 Converting Pivotal Tracker Stories to Cucumber Feature Files
+Webapp for https://github.com/jaunesarmiento/mangojs
 
 Ruby version:: 2.0.0-p247
 
