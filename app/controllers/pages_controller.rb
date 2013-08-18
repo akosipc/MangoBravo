@@ -57,7 +57,19 @@ private
     tasks = story.tasks.all
     if tasks.present?
       tasks.each do |task|
-        str += "\t\t#{task.description}\n"
+        if task.description.include? ':'
+          description = task.description.split(':')
+          str += "\t\t#{description[0]}\n"
+          if description[1].include? '||'
+            data = description[1].split('||')
+            str += "\t\t\t#{data[0]}|\n"
+            str += "\t\t\t|#{data[1]}\n"
+          else
+            str += "\t\t\t#{description[1]}\n"
+          end
+        else
+          str += "\t\t#{task.description}\n"
+        end
       end
     end
 
