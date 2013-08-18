@@ -6,13 +6,9 @@
       <div class='overflow'>
         <ul>
           <% @project.stories.all(story_type: 'feature', current_state: 'started').each do |story| %>
-            <li>
-              <%= story.name.truncate(50) %>
-            <div class='right'>
-              <%= link_to 'Convert', convert_path(story.id), class: 'button success tiny no-margin' %>
-            </div>
-            <div class='clearfix'></div>
-            </li>
+            <%= link_to convert_path(story.id) do %>
+              <li> <%= story.name.truncate(70) %> </li>
+            <% end %>
           <% end %>
         </ul>
       </div>
