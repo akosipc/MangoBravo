@@ -27,5 +27,6 @@ editAreaLoader.init({
   allow_toggle: false,
   toolbar: '',
   min_height: '675',
-  is_editable: false
+  is_editable: false,
+  replace_tab_by_spaces: 2
 })

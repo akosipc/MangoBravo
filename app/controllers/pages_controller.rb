@@ -46,11 +46,11 @@ private
 
 
   def build_feature (story)
-    str = ''
+    str = ""
     name = story.name.split(',')
-    str += "Feature:\n"
+    str += "\nFeature:\n"
     str += "\t#{name[0]}\n"
-    str += "\t#{name[1]}\n"
+    str += "\t#{name[1].strip}\n"
     str += "\tSo that\n\n"
     str += "\t@mango @#{story.id}\n"
     str += "\tScenario: #{story.name}\n"
