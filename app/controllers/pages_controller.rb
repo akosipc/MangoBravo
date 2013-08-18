@@ -72,6 +72,7 @@ private
         end
       end
     end
+    str += "\t\tThen I should be able to Finish this Pivotal Story with ID #{story.id}"
 
     @feature = str
   end
