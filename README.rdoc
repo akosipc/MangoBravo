@@ -1,28 +1,15 @@
-== README
+== MangoBravo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Converting Pivotal Tracker Stories to Cucumber Feature Files
 
-Things you may want to cover:
+Ruby version:: 2.0.0-p247
 
-* Ruby version
+System dependencies:: Pivotal Tracker, PostgreSQL
 
-* System dependencies
+Website:: http://mangobravo.herokuapp.com
 
-* Configuration
+== Samples
 
-* Database creation
+Pivotal Tracker Token:: c0d4bc0f8ecade8f868ab1c72cccec12
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Pivotal Tracker Project ID:: 892984
