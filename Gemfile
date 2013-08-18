@@ -38,3 +38,9 @@ end
 group :production do
 	gem 'rails_12factor'
 end
+
+group :test do
+  gem 'rspec-rails'
+  gem 'nyan-cat-formatter'
+  gem 'shoulda'
+end
